@@ -15,8 +15,6 @@ GPUImageOutput
 }	
 ```
 
-
-
 多图渲染要复写这个方法。
 
 ``` objective-c
@@ -44,4 +42,10 @@ GPUImageOutput
     }
 }
 ```
+
+A `uniform` is a global GLSL variable declared with the "uniform" storage qualifier. These act as parameters that the user of a shader program can pass to that program. They are stored in a `program` object.
+
+Uniforms are so named because they do not change from one execution of a shader program to the next within a particular rendering call. This makes them unlike shader stage inputs and outputs, which are often different for each invocation of a program stage.
+
+
 
